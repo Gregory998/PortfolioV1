@@ -27,7 +27,9 @@ body .main-container .second-container {
 body .main-container .second-container .container-rs {
   height: 10%;
   width: 100%;
-  background-color: #fff;
+  display: flex;
+  justify-content: right;
+  align-items: center;
 }
 
 /*# sourceMappingURL=style.css.map */
