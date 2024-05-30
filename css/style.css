@@ -1,0 +1,33 @@
+@font-face {
+  font-family: "Filson-bold";
+  src: url(../fonts/FilsonSoft-Bold.woff2);
+}
+@font-face {
+  font-family: "Filson-reg";
+  src: url(../fonts/FilsonSoft-Regular.woff2);
+}
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #27282b;
+}
+body .main-container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body .main-container .second-container {
+  width: 70%;
+  height: 70%;
+  background-color: #0a0a30;
+  border-radius: 2rem;
+}
+body .main-container .second-container .container-rs {
+  height: 10%;
+  width: 100%;
+  background-color: #fff;
+}
+
+/*# sourceMappingURL=style.css.map */
