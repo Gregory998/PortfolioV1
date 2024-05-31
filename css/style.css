@@ -32,7 +32,7 @@ body .main-container .second-container .container-rs {
   align-items: center;
 }
 body .main-container .second-container .container-rs a {
-  margin-right: 10px;
+  margin-right: 14px;
 }
 body .main-container .second-container .container-infos {
   width: 100%;
@@ -47,6 +47,12 @@ body .main-container .second-container .container-infos .first-container {
   border-radius: 2rem;
   border-top: 5px solid #27282b;
   border-bottom: 5px solid #27282b;
+}
+body .main-container .second-container .container-infos .first-container .welcome {
+  font-family: "Filson-bold";
+  font-size: 3.2rem;
+  color: white;
+  margin-left: 10px;
 }
 
 /*# sourceMappingURL=style.css.map */
