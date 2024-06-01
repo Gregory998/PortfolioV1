@@ -19,8 +19,8 @@ body .main-container {
   align-items: center;
 }
 body .main-container .second-container {
-  width: 70%;
-  height: 70%;
+  width: 90%;
+  height: 85%;
   background-color: #0a0a30;
   border-radius: 2rem;
 }
@@ -47,12 +47,46 @@ body .main-container .second-container .container-infos .first-container {
   border-radius: 2rem;
   border-top: 5px solid #27282b;
   border-bottom: 5px solid #27282b;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
-body .main-container .second-container .container-infos .first-container .welcome {
+body .main-container .second-container .container-infos .first-container .informations {
+  width: 35%;
+  height: 80%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  color: white;
+}
+body .main-container .second-container .container-infos .first-container .informations .welcome {
   font-family: "Filson-bold";
   font-size: 3.2rem;
-  color: white;
   margin-left: 10px;
+}
+body .main-container .second-container .container-infos .first-container .informations .who {
+  font-family: "Filson-reg";
+  font-size: 1.1rem;
+}
+body .main-container .second-container .container-infos .first-container .project {
+  width: 30%;
+  height: 80%;
+  display: flex;
+  align-content: center;
+  flex-direction: column;
+  color: white;
+}
+body .main-container .second-container .container-infos .first-container .project h3 {
+  font-family: "Filson-bold";
+  font-size: 1.5rem;
+  text-align: center;
+}
+body .main-container .second-container .container-infos .first-container .project a {
+  font-family: "Filson-reg";
+  font-size: 1.1rem;
+  margin-left: 10px;
+  color: white;
 }
 
 /*# sourceMappingURL=style.css.map */
