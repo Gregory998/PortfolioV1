@@ -100,7 +100,10 @@ body .main-container .second-container .all-informations .container-infos .conta
   font-size: 1.5rem;
   text-align: center;
 }
-body .main-container .second-container .all-informations .container-infos .container-one .project a {
+body .main-container .second-container .all-informations .container-infos .container-one .project ul li {
+  margin-bottom: 10px;
+}
+body .main-container .second-container .all-informations .container-infos .container-one .project ul li a {
   font-family: "Filson-reg";
   font-size: 1.1rem;
   margin-left: 10px;
