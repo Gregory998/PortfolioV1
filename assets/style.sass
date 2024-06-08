@@ -9,24 +9,23 @@
 body
     margin: 0
     padding: 0
-    // background-color:#27282b
     .main-container
         width: 100vw
         height: 100vh
         display: flex
-        justify-content: space-between
+        justify-content: center
+        flex-direction: column
         align-items: center
-        .first-container
-            width: 15%
-            height: 100%
-            background-color: black
-            color: white
-            font-family: 'Filson-reg'
-            background-image: url('../img/fond3.jpg')
-            background-repeat: no-repeat
-            text-align: center
-            h4
-                font-size: 1.7rem
+        background-image: url('../img/bg1.jpg')
+        background-size: cover
+        .container-rs
+            height: 10%
+            width: 100%
+            display: flex
+            justify-content: right
+            align-items: center
+            a
+                margin-right: 20px
         .second-container
             width: 85%
             height: 85%
@@ -35,25 +34,13 @@ body
             .all-informations
                 width: 90%
                 height: 100%
-                background-color: #0a0a30
                 border-radius: 2rem
-                .container-rs
-                    height: 10%
-                    width: 100%
-                    display: flex
-                    justify-content: right
-                    align-items: center
-                    a
-                        margin-right: 14px
                 .container-infos
                     width: 100%
                     height: 80%
                     display: flex
                     justify-content: center
                     align-items: center
-                    // background-image: url('../img/fond3.jpg')
-                    // background-repeat: no-repeat
-                    // background-position-y: 50%
                     .container-one
                         width: 70%
                         height: 70%
@@ -70,16 +57,26 @@ body
                             justify-content: center
                             flex-direction: column
                             text-align: center 
-                            color: white
+                            color: #ffffff
+                            font-family: 'Filson-bold'
                             .welcome
-                                font-family: 'Filson-bold'
                                 font-size: 3.2rem
                                 margin-left: 10px
+                                text-transform: uppercase
+                                letter-spacing: 0.1rem
+                                background: linear-gradient(90deg, #ffdd00 0%, #ff7e00 100%)
+                                // -webkit-background-clip: text
+                                // -webkit-text-fill-color: transparent
+                                text-shadow: 0 0 10px rgba(0, 0, 0, 0.7), 0 0 20px rgba(0, 0, 0, 0.7)
+                                transform: perspective(500px) rotateY(10deg)
                             .who
-                                font-family: 'Filson-reg'
-                                font-size: 1.1rem
+                                font-size: 1.3rem
+                                text-align: center
+                                color: #f5deb3
+                                text-shadow: 1px 1px 2px #000000
+                                transform: perspective(500px) rotateY(5deg)
                         .project
-                            width: 30%
+                            width: 34%
                             height: 80%
                             display: flex
                             align-content: center
@@ -87,13 +84,13 @@ body
                             color: white
                             h3
                                 font-family: 'Filson-bold'
-                                font-size: 1.5rem
+                                font-size: 1.9rem
                                 text-align: center
                             ul li
                                 margin-bottom: 10px
                                 a
-                                    font-family: 'Filson-reg'
-                                    font-size: 1.1rem
+                                    font-family: 'Filson-bold'
+                                    font-size: 1.5rem
                                     margin-left: 10px
                                     color: white
                                     
