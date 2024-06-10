@@ -132,4 +132,121 @@ body .main-container .skills .tech-comp .tech-img.active {
   opacity: 1;
 }
 
+@media (max-width: 1024px) {
+  .main-container {
+    min-height: 120vh;
+  }
+  .main-container .second-container {
+    min-width: 100%;
+  }
+  .main-container .second-container .container-one {
+    flex-direction: row;
+    min-width: 100%;
+    min-height: 100%;
+  }
+  .main-container .second-container .container-one .informations, .main-container .second-container .container-one .project {
+    width: 50% !important;
+    height: auto;
+  }
+  .main-container .second-container .container-one .informations .welcome, .main-container .second-container .container-one .project .welcome {
+    font-size: 2.5rem;
+  }
+  .main-container .second-container .container-one .informations .who, .main-container .second-container .container-one .project .who {
+    font-size: 1.2rem !important;
+  }
+  .main-container .second-container .container-one .project {
+    height: 60% !important;
+  }
+  .main-container .second-container .container-one .project h3 {
+    font-size: 1.5rem;
+  }
+  .main-container .second-container .container-one .project a {
+    font-size: 1.3rem !important;
+  }
+}
+@media (max-width: 768px) {
+  .second-container {
+    width: 95%;
+    height: auto !important;
+  }
+  .second-container .container-one {
+    width: 90%;
+    border-top: 3px solid #27282b;
+    border-bottom: 3px solid #27282b;
+  }
+  .second-container .container-one .welcome {
+    font-size: 1.7rem !important;
+  }
+  .second-container .container-one .who {
+    font-size: 0.9rem;
+  }
+  .second-container .container-one .project h3 {
+    font-size: 1.2rem;
+  }
+  .second-container .container-one .project a {
+    font-size: 1rem;
+  }
+  .skills {
+    width: 100% !important;
+  }
+  .skills .tech-comp {
+    width: 200px !important;
+    height: 200px !important;
+  }
+}
+@media (max-width: 480px) {
+  .main-container {
+    min-height: 130vh;
+  }
+  .main-container .container-rs {
+    justify-content: center;
+  }
+  .main-container .second-container {
+    width: 100%;
+  }
+  .main-container .second-container .container-one {
+    width: 100%;
+    flex-direction: column;
+  }
+  .main-container .second-container .container-one .informations, .main-container .second-container .container-one .project {
+    min-width: 100% !important;
+  }
+  .main-container .second-container .container-one .informations .welcome, .main-container .second-container .container-one .project .welcome {
+    font-size: 1.5rem;
+  }
+  .main-container .second-container .container-one .informations .who, .main-container .second-container .container-one .project .who {
+    font-size: 0.8rem;
+  }
+  .main-container .second-container .container-one .informations .project h3, .main-container .second-container .container-one .project .project h3 {
+    font-size: 1rem;
+  }
+  .main-container .second-container .container-one .informations .project a, .main-container .second-container .container-one .project .project a {
+    font-size: 0.8rem;
+  }
+  .main-container .tech-comp {
+    width: 150px;
+    height: 150px;
+  }
+}
+@media (max-width: 350px) {
+  .main-container {
+    min-height: 140vh;
+  }
+  .main-container .container-rs {
+    position: absolute;
+    bottom: 0;
+  }
+  .main-container .all-informations {
+    min-width: 100% !important;
+  }
+  .main-container .all-informations .who {
+    width: 95%;
+    margin: auto;
+  }
+  .main-container .skills {
+    margin-top: 50px !important;
+    height: 30% !important;
+  }
+}
+
 /*# sourceMappingURL=style.css.map */

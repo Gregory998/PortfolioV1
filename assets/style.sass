@@ -115,7 +115,90 @@ body
                 .tech-img.active
                     opacity: 1
 
+// RESPONSIVE
+@media (max-width: 1024px) 
+    .main-container
+        min-height: 120vh
+        .second-container
+            min-width: 100%
+            .container-one 
+                flex-direction: row
+                min-width: 100%
+                min-height: 100%
+                .informations, .project 
+                    width: 50% !important
+                    height: auto
+                    .welcome 
+                        font-size: 2.5rem
+                    .who 
+                        font-size: 1.2rem !important
+                .project
+                    height: 60% !important
+                .project h3 
+                    font-size: 1.5rem
+                .project a 
+                    font-size: 1.3rem !important
+    
+@media (max-width: 768px) 
+    .second-container 
+        width: 95%
+        height: auto !important
+        .container-one 
+            width: 90%
+            border-top: 3px solid #27282b
+            border-bottom: 3px solid #27282b
+            .welcome 
+                font-size: 1.7rem !important
+            .who 
+                font-size: 0.9rem
+            .project h3 
+                font-size: 1.2rem
+            .project a 
+                font-size: 1rem
+    .skills
+        width: 100% !important
+        .tech-comp 
+            width: 200px !important
+            height: 200px !important
+    
+@media (max-width: 480px) 
+    .main-container 
+        min-height: 130vh
+        .container-rs 
+            justify-content: center
+        .second-container 
+            width: 100%
+            .container-one 
+                width: 100%
+                flex-direction: column
+                .informations, .project
+                    min-width: 100% !important
+                    .welcome 
+                        font-size: 1.5rem
+                    .who 
+                        font-size: 0.8rem
+                    .project h3 
+                        font-size: 1rem
+                    .project a 
+                        font-size: 0.8rem
+        .tech-comp 
+            width: 150px
+            height: 150px
 
+@media (max-width: 350px)    
+    .main-container 
+        min-height: 140vh
+        .container-rs
+            position: absolute
+            bottom: 0
+        .all-informations
+            min-width: 100% !important
+            .who
+                width: 95%
+                margin: auto
+        .skills
+            margin-top: 50px !important
+            height: 30% !important
                             
 
                     
