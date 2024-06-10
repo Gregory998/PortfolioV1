@@ -50,7 +50,7 @@ body .main-container .second-container .all-informations .container-infos {
 }
 body .main-container .second-container .all-informations .container-infos .container-one {
   width: 70%;
-  height: 70%;
+  height: 75%;
   border-radius: 2rem;
   border-top: 5px solid #27282b;
   border-bottom: 5px solid #27282b;
@@ -60,16 +60,17 @@ body .main-container .second-container .all-informations .container-infos .conta
 }
 body .main-container .second-container .all-informations .container-infos .container-one .informations {
   width: 35%;
-  height: 80%;
+  height: 95%;
   display: flex;
   justify-content: center;
   flex-direction: column;
   text-align: center;
   color: #ffffff;
   font-family: "Filson-bold";
+  margin-left: 10px;
 }
 body .main-container .second-container .all-informations .container-infos .container-one .informations .welcome {
-  font-size: 3.2rem;
+  font-size: 3rem;
   margin-left: 10px;
   text-transform: uppercase;
   letter-spacing: 0.1rem;
@@ -78,7 +79,7 @@ body .main-container .second-container .all-informations .container-infos .conta
   transform: perspective(500px) rotateY(10deg);
 }
 body .main-container .second-container .all-informations .container-infos .container-one .informations .who {
-  font-size: 1.3rem;
+  font-size: 1.1rem;
   text-align: center;
   color: #f5deb3;
   text-shadow: 1px 1px 2px #000000;
@@ -132,6 +133,41 @@ body .main-container .skills .tech-comp .tech-img.active {
   opacity: 1;
 }
 
+@media (max-width: 1700px) {
+  .main-container .second-container .container-one .informations .welcome {
+    font-size: 2.5rem !important;
+  }
+  .main-container .second-container .container-one .informations .who {
+    font-size: 1rem !important;
+  }
+  .main-container .second-container .container-one .project {
+    min-width: 45% !important;
+  }
+  .main-container .second-container .container-one .project h3 {
+    font-size: 1.7rem !important;
+  }
+  .main-container .second-container .container-one .project a {
+    font-size: 1.4rem !important;
+  }
+}
+@media (max-width: 1440px) {
+  .main-container .second-container .container-one {
+    min-width: 85% !important;
+  }
+  .main-container .second-container .container-one .informations {
+    min-width: 50% !important;
+  }
+  .main-container .second-container .container-one .project {
+    min-width: 45% !important;
+    height: 85% !important;
+  }
+  .main-container .second-container .container-one .project h3 {
+    font-size: 1.5rem;
+  }
+  .main-container .second-container .container-one .project a {
+    font-size: 1.3rem !important;
+  }
+}
 @media (max-width: 1024px) {
   .main-container {
     min-height: 120vh;
@@ -157,39 +193,43 @@ body .main-container .skills .tech-comp .tech-img.active {
   .main-container .second-container .container-one .project {
     height: 60% !important;
   }
-  .main-container .second-container .container-one .project h3 {
-    font-size: 1.5rem;
-  }
-  .main-container .second-container .container-one .project a {
-    font-size: 1.3rem !important;
-  }
 }
 @media (max-width: 768px) {
-  .second-container {
+  .main-container {
+    min-height: 120vh;
+  }
+  .main-container .second-container {
     width: 95%;
     height: auto !important;
   }
-  .second-container .container-one {
+  .main-container .second-container .container-one {
     width: 90%;
     border-top: 3px solid #27282b;
     border-bottom: 3px solid #27282b;
+    flex-direction: column !important;
   }
-  .second-container .container-one .welcome {
-    font-size: 1.7rem !important;
+  .main-container .second-container .container-one .informations {
+    min-width: 80% !important;
   }
-  .second-container .container-one .who {
+  .main-container .second-container .container-one .informations .welcome {
+    font-size: 2rem !important;
+  }
+  .main-container .second-container .container-one .informations .who {
     font-size: 0.9rem;
   }
-  .second-container .container-one .project h3 {
+  .main-container .second-container .container-one .project {
+    min-width: 80% !important;
+  }
+  .main-container .second-container .container-one .project h3 {
     font-size: 1.2rem;
   }
-  .second-container .container-one .project a {
+  .main-container .second-container .container-one .project a {
     font-size: 1rem;
   }
-  .skills {
+  .main-container .skills {
     width: 100% !important;
   }
-  .skills .tech-comp {
+  .main-container .skills .tech-comp {
     width: 200px !important;
     height: 200px !important;
   }
@@ -198,15 +238,15 @@ body .main-container .skills .tech-comp .tech-img.active {
   .main-container {
     min-height: 130vh;
   }
-  .main-container .container-rs {
-    justify-content: center;
+  .main-container .container-rs a img {
+    width: 50px !important;
+    height: 50px !important;
   }
   .main-container .second-container {
     width: 100%;
   }
   .main-container .second-container .container-one {
     width: 100%;
-    flex-direction: column;
   }
   .main-container .second-container .container-one .informations, .main-container .second-container .container-one .project {
     min-width: 100% !important;

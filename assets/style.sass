@@ -43,7 +43,7 @@ body
                     align-items: center
                     .container-one
                         width: 70%
-                        height: 70%
+                        height: 75%
                         border-radius: 2rem
                         border-top: 5px solid #27282b
                         border-bottom: 5px solid #27282b
@@ -52,15 +52,16 @@ body
                         align-items: center
                         .informations
                             width: 35%
-                            height: 80%
+                            height: 95%
                             display: flex
                             justify-content: center
                             flex-direction: column
                             text-align: center 
                             color: #ffffff
                             font-family: 'Filson-bold'
+                            margin-left: 10px
                             .welcome
-                                font-size: 3.2rem
+                                font-size: 3rem
                                 margin-left: 10px
                                 text-transform: uppercase
                                 letter-spacing: 0.1rem
@@ -70,7 +71,7 @@ body
                                 text-shadow: 0 0 10px rgba(0, 0, 0, 0.7), 0 0 20px rgba(0, 0, 0, 0.7)
                                 transform: perspective(500px) rotateY(10deg)
                             .who
-                                font-size: 1.3rem
+                                font-size: 1.1rem
                                 text-align: center
                                 color: #f5deb3
                                 text-shadow: 1px 1px 2px #000000
@@ -116,6 +117,37 @@ body
                     opacity: 1
 
 // RESPONSIVE
+@media (max-width: 1700px) 
+    .main-container
+        .second-container
+            .container-one
+                .informations
+                    .welcome
+                        font-size: 2.5rem !important
+                    .who
+                        font-size: 1rem !important
+                .project
+                    min-width: 45% !important
+                .project h3 
+                    font-size: 1.7rem !important
+                .project a 
+                    font-size: 1.4rem !important
+
+@media (max-width: 1440px) 
+    .main-container
+        .second-container
+            .container-one
+                min-width: 85% !important
+                .informations
+                    min-width: 50% !important
+                .project
+                    min-width: 45% !important
+                    height: 85% !important
+                .project h3 
+                    font-size: 1.5rem
+                .project a 
+                    font-size: 1.3rem !important
+                    
 @media (max-width: 1024px) 
     .main-container
         min-height: 120vh
@@ -134,43 +166,48 @@ body
                         font-size: 1.2rem !important
                 .project
                     height: 60% !important
-                .project h3 
-                    font-size: 1.5rem
-                .project a 
-                    font-size: 1.3rem !important
     
 @media (max-width: 768px) 
-    .second-container 
-        width: 95%
-        height: auto !important
-        .container-one 
-            width: 90%
-            border-top: 3px solid #27282b
-            border-bottom: 3px solid #27282b
-            .welcome 
-                font-size: 1.7rem !important
-            .who 
-                font-size: 0.9rem
-            .project h3 
-                font-size: 1.2rem
-            .project a 
-                font-size: 1rem
-    .skills
-        width: 100% !important
-        .tech-comp 
-            width: 200px !important
-            height: 200px !important
+    .main-container
+        min-height: 120vh
+        .second-container 
+            width: 95%
+            height: auto !important
+            .container-one 
+                width: 90%
+                border-top: 3px solid #27282b
+                border-bottom: 3px solid #27282b
+                flex-direction: column !important
+                .informations 
+                    min-width: 80% !important
+                    .welcome 
+                        font-size: 2rem !important
+                    .who 
+                        font-size: 0.9rem
+                .project
+                    min-width: 80% !important
+                .project h3 
+                    font-size: 1.2rem
+                .project a 
+                    font-size: 1rem
+        .skills
+            width: 100% !important
+            .tech-comp 
+                width: 200px !important
+                height: 200px !important
     
 @media (max-width: 480px) 
     .main-container 
         min-height: 130vh
         .container-rs 
-            justify-content: center
+            a 
+                img
+                    width: 50px !important
+                    height: 50px !important
         .second-container 
             width: 100%
             .container-one 
                 width: 100%
-                flex-direction: column
                 .informations, .project
                     min-width: 100% !important
                     .welcome 
