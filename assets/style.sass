@@ -94,8 +94,10 @@ body
                                     font-size: 1.5rem
                                     margin-left: 10px
                                     color: white
+                            ul li::marker
+                                    content: "⭐"
         .skills
-            width: 50%
+            width: 100%
             height: 30%
             display: flex
             justify-content: center
@@ -115,6 +117,67 @@ body
                     transition: opacity 1s ease-in-out
                 .tech-img.active
                     opacity: 1
+            .container
+                position: relative
+                width: 30%
+                height: 250px
+                display: flex
+                justify-content: center
+                align-items: center
+                //margin-top: 20%
+                .square
+                    position: absolute
+                    width: 200px
+                    height: 200px
+                    span
+                        position: absolute
+                        inset: 10px
+                        overflow: hidden
+                        transform: rotate(calc( 90deg * var(--i) ))
+                    span::before
+                        content: ''
+                        position: absolute
+                        width: 100%
+                        height: 4px
+                        background: #0f0
+                        transform: translateX(-100%)
+                        animation: animate 4s linear infinite
+                        animation-delay: calc( 1s * var(--i))
+                .square:nth-child(2)
+                    transform: translate(-25%, -25%) rotateX(180deg)
+                    filter: hue-rotate(60deg)
+                .square:nth-child(3)
+                    transform: translate(25%, 25%) rotateX(180deg)
+                    filter: hue-rotate(180deg)
+                .square::before
+                    content: ''
+                    position: absolute
+                    width: 20px
+                    height: 20px
+                    background: #0f0
+                    box-shadow: 0 0 0 8px #0f03, 0 0 0 15px #0f01
+                    animation: animateSquare 4s linear infinite
+
+@keyframes animateSquare
+    0%
+        transform: translate(2px,2px)
+    25%
+        transform: translate(178px,2px)
+    50%
+        transform: translate(178px,178px)
+    75%
+        transform: translate(2px,178px)
+    100%
+        transform: translate(2px,2px)
+
+@keyframes animate
+    0%
+        transform: translateX(-100%)
+    50%, 100%
+        transform: translateX(100%)
+        
+        
+
 
 // RESPONSIVE
 @media (max-width: 1700px) 
@@ -150,7 +213,7 @@ body
                     
 @media (max-width: 1024px) 
     .main-container
-        min-height: 120vh
+        min-height: 130vh
         .second-container
             min-width: 100%
             .container-one 
@@ -166,10 +229,16 @@ body
                         font-size: 1.2rem !important
                 .project
                     height: 60% !important
+        .skills
+            display: flex
+            flex-direction: column
+            min-height: 55vh
+            .container
+                margin-top: 30px
     
 @media (max-width: 768px) 
     .main-container
-        min-height: 120vh
+        min-height: 135vh
         .second-container 
             width: 95%
             height: auto !important
@@ -198,7 +267,7 @@ body
     
 @media (max-width: 480px) 
     .main-container 
-        min-height: 130vh
+        min-height: 170vh
         .container-rs 
             a 
                 img
@@ -218,16 +287,19 @@ body
                         font-size: 1rem
                     .project a 
                         font-size: 0.8rem
-        .tech-comp 
-            width: 150px
-            height: 150px
+        .skills
+            min-height: 65vh !important
+            .tech-comp 
+                width: 150px
+                height: 150px
 
 @media (max-width: 350px)    
     .main-container 
-        min-height: 140vh
+        min-height: 175vh
         .container-rs
-            position: absolute
-            bottom: 0
+            height: 8vh !important
+            margin-top: -50px
+            justify-content: center !important
         .all-informations
             min-width: 100% !important
             .who
@@ -235,7 +307,7 @@ body
                 margin: auto
         .skills
             margin-top: 50px !important
-            height: 30% !important
+            height: 27% !important
                             
 
                     
